@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">   
+  <title>Pinto's Generator</title>
+</head>
+<body>
+  <h1>Pinto's <br> Generator</h1>
+
+  <section class="pinto_display">
+    <canvas id="pintoCanvas" width="300" height="300"></canvas>
+  </section>
+
+  <section class="request_bar">
+    <p>Monte seu pinto</p>
+
+    <p>Escolha o tamanho de seu pinto:</p>
+    <input type="checkbox" id="S" name="box1" onclick="CheckTheBox(this)">
+    <label for="S">Pequeno<br></label>
+    <input type="checkbox" id="M" name="box1" onclick="CheckTheBox(this)">
+    <label for="M">Médio<br></label>
+    <input type="checkbox" id="G" name="box1" onclick="CheckTheBox(this)">
+    <label for="G">Grande<br></label>
+
+    <p>Escolha a cor de seu pinto:</p>
+    <section class="slidercontainer">
+      <label for="Red">R</label>
+      <input type="range" min="0" max="255" value="255" class="slider" id="Red">
+      <label for="Green">G</label>
+      <input type="range" min="0" max="255" value="255" class="slider" id="Green">
+      <label for="Blue">B</label>
+      <input type="range" min="0" max="255" value="255" class="slider" id="Blue">
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
