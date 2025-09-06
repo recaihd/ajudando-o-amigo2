@@ -1,5 +1,5 @@
 const img = new Image();
-img.src = "img/template.webp"; 
+img.src = "./img/template.webp"; 
 const canvas = document.getElementById("pintoCanvas");
 const ctx = canvas.getContext("2d");
 
